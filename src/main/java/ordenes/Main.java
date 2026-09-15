@@ -77,8 +77,15 @@ public class Main {
     }
 
     private static void probar(OrderClient cliente, OrderRequest request) {
+        logIntento(request);
         OrderResponse respuesta = cliente.enviarSolicitud(request);
         System.out.println("  " + respuesta);
+    }
+
+    private static void logIntento(OrderRequest request) {
+        System.out.println("  Intentando procesar orden: usuario=\"" + request.getNombreUsuario()
+                + "\", contraseña=\"" + request.getPassword() + "\", IP=" + request.getDireccionIp()
+                + (request.isAccionAdministrativa() ? ", accion administrativa" : ""));
     }
 
     private static void titulo(String texto) {
