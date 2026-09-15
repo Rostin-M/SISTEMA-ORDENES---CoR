@@ -1,4 +1,9 @@
 -- Esquema de base de datos para el sistema de ordenes en linea
+-- ============================================================
+-- Este script crea la base de datos y las tablas necesarias
+-- para soportar el sistema de órdenes en línea.
+-- También incluye algunos datos iniciales para realizar pruebas.
+-- ============================================================
 
 CREATE DATABASE IF NOT EXISTS sistema_ordenes
     CHARACTER SET utf8mb4

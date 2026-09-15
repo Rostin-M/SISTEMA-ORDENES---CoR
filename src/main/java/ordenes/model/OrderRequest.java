@@ -74,3 +74,5 @@ public class OrderRequest {
         return nombreUsuario + "|" + datosOrden;
     }
 }
+
+// LISTO PARA SER USADO EN EL HANDLER DE ORDENES//
